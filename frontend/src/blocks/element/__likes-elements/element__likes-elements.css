@@ -1,0 +1,10 @@
+.element__likes-elements {
+  display: flex;
+  flex-direction: column;
+  width: 22px;
+  height: 35px;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 22px;
+  padding-top: 23px;
+}
