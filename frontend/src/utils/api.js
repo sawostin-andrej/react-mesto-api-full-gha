@@ -106,7 +106,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: "http://api.project.yandexmesto.nomoredomainsrocks.ru",
+  baseUrl: "http://project.yandexmesto.nomoredomainsrocks.ru",
 });
 
 export default api;

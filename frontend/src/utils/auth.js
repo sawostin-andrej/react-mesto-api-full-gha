@@ -1,4 +1,4 @@
-const baseUrl = "http://api.project.yandexmesto.nomoredomainsrocks.ru";
+const baseUrl = "http://project.yandexmesto.nomoredomainsrocks.ru";
 
 const getResponseData = (res) => {
   if (res.ok) return res.json();
