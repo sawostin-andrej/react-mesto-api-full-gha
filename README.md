@@ -9,8 +9,8 @@
 
 ## Ссылки на проект
 
-IP-адрес 158.160.80.111
+IP 158.160.80.111
 
-Frontend project.yandexmesto.nomoredomainsrocks.ru
+Frontend https://project.yandexmesto.nomoredomainsrocks.ru
 
-Backend api.project.yandexmesto.nomoredomainsrocks.ru
+Backend https://api.project.yandexmesto.nomoredomainsrocks.ru
