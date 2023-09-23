@@ -75,7 +75,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: "https://project.yandexmesto.nomoredomainsrocks.ru",
+  baseUrl: "https://api.project.yandexmesto.nomoredomainsrocks.ru",
   headers: {
     authorization: "0d2042a6-4158-4b2d-9cd1-8958c66a2f7c",
     "Content-Type": "application/json",
