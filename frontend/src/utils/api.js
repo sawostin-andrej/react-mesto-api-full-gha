@@ -5,7 +5,7 @@ class Api {
 
   _checkResponse(res) {
     if (!res.ok) {
-      return Promise.reject(`Ошибка: ${res.status}`); 
+      return Promise.reject(`Ошибка: ${res.status}`);
   }
   return res.json();
 }
@@ -28,7 +28,7 @@ class Api {
    .then(this._checkResponse)
   }
 
-  setUserInfo(data, token) { 
+  setUserInfo(data, token) {
     console.log(data)
     return fetch(`${this._url}/users/me`, {
       method: 'PATCH',
@@ -78,9 +78,9 @@ class Api {
       method: 'DELETE',
       headers: {
         "Authorization" : `Bearer ${token}`
-      } 
+      }
     })
-    .then(this._checkResponse) 
+    .then(this._checkResponse)
   }
 
   likeCard(cardId, token) {
@@ -88,7 +88,7 @@ class Api {
       method: 'PUT',
       headers: {
         "Authorization" : `Bearer ${token}`
-      } 
+      }
     })
     .then(this._checkResponse)
   }
@@ -106,7 +106,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: "http://localhost:3000",
+  baseUrl: "http://api.project.yandexmesto.nomoredomainsrocks.ru",
 });
 
 export default api;
