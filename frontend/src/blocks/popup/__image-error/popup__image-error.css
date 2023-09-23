@@ -1,0 +1,9 @@
+.popup__image-error {
+  background-image: url(../../../images/Union1.svg);
+  width: 120px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 60px;
+}

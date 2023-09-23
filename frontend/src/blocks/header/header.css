@@ -3,12 +3,15 @@
   padding: 0;
   border-bottom: 1px solid rgba(84, 84, 84, 0.7);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
   padding-top: 45px;
+  padding-bottom: 41px;
 }
 
 @media screen and (max-width: 720px) {
   .header {
     padding-top: 28px;
+    padding-bottom: 31.6px;
   }
 }

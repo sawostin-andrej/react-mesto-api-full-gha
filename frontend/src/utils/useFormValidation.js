@@ -41,5 +41,5 @@ export default function useFormValidation() {
     });
   }, []);
 
-  return [values, errors, isValid, isInputValid, handleChange, reset, setValue];
+  return {values, errors, isValid, isInputValid, handleChange, reset, setValue};
 }

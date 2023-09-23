@@ -10,7 +10,7 @@ export default function Card({ card, onCardClick, onDelete }) {
   return (
     <article className="elements__item element">
       {/*шаблон добавления карточки*/}
-      {currentUser._id === card.owner._id && <img src={deletebutton} alt="#" className="elements__delete-btn" onClick={() => onDelete(card._id)}/>}
+      {currentUser._id === card.owner && <img src={deletebutton} alt="#" className="elements__delete-btn" onClick={() => onDelete(card._id)}/>}
       <img
         className="element__image"
         src={card.link}

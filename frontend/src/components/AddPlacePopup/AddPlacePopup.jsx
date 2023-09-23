@@ -7,7 +7,7 @@ export default function AddPlacePopup({
   onAddPlace,
   isSending,
 }) {
-  const [values, errors, isValid, isInputValid, handleChange, reset] =
+  const {values, errors, isValid, isInputValid, handleChange, reset} =
     useFormValidation();
 
   function resetAfterClose() {

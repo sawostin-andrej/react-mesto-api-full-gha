@@ -10,7 +10,7 @@ export default function EditProfilePopup({
   isSending,
 }) {
   const currentUser = useContext(CurrentUserContext);
-  const [values, errors, isValid, isInputValid, handleChange, reset, setValue] =
+  const {values, errors, isValid, isInputValid, handleChange, reset, setValue} =
     useFormValidation();
 
   useEffect(() => {

@@ -9,7 +9,7 @@ export default function EditAvatarPopup({
   isSending,
 }) {
   const input = useRef();
-  const [values, errors, isValid, isInputValid, handleChange, reset] =
+  const {values, errors, isValid, isInputValid, handleChange, reset} =
     useFormValidation();
 
   function resetAfterClose() {

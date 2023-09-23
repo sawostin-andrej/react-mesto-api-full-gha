@@ -1,0 +1,9 @@
+.popup__image-success {
+  background-image: url(../../../images/Union.svg);
+  width: 120px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 60px;
+}

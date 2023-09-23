@@ -6,13 +6,13 @@ export default function IconLike({ likes, myid, cardid }) {
   const [count, setCount] = useState(likes.length);
 
   useEffect(() => {
-    setIsLike(likes.some((item) => myid === item._id));
+    setIsLike(likes.some((item) => myid === item));
   }, [likes, myid]);
 
   function toggleLike() {
     if (isLike) {
       api
-        .remuvelikeCard(cardid)
+        .remuvelikeCard(cardid, localStorage.jwt)
         .then((res) => {
           setIsLike(false);
           setCount(res.likes.length);
@@ -20,7 +20,7 @@ export default function IconLike({ likes, myid, cardid }) {
         .catch((err) => console.error(`Ошибка при удалении лайка ${err}`));
     } else {
       api
-        .likeCard(cardid)
+        .likeCard(cardid, localStorage.jwt)
         .then((res) => {
           setIsLike(true);
           setCount(res.likes.length);
