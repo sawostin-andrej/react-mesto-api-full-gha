@@ -5,14 +5,13 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
 const { errors } = require('celebrate');
-const errorHandle = require('./middlewares/errorHandle');
 const cors = require('cors');
+const errorHandle = require('./middlewares/errorHandle');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const { PORT = 3000, DB_URL = 'mongodb://127.0.0.1:27017/mestodb' } = process.env;
 
 const app = express();
-
 
 app.use(cors());
 
@@ -22,6 +21,10 @@ const limiter = rateLimit({
 });
 
 app.use(helmet());
+
+app.get('/crash-test', () => {
+  setTimeout(() => { throw new Error('Сервер сейчас упадёт'); }, 0);
+});
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

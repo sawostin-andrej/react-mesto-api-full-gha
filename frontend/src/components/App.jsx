@@ -175,15 +175,13 @@ function App() {
       .catch((err) => console.error(`Ошибка редактирования аватара ${err}`))
       .finally(() => setIsSending(false));
   }
-  console.log();
 
   function handleAddPlaceSubmit(data, reset) {
-    console.log(data)
     setIsSending(true);
     api
       .addCard(data, localStorage.jwt)
       .then(({data}) => {
-        setCards([...cards, data]);
+        setCards([ ...cards, data ]);
         closeAllPopups();
         reset();
         setIsSending(false);

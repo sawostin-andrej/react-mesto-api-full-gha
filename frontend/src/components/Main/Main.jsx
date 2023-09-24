@@ -54,7 +54,7 @@ export default function Main({
               <Card card={data} onCardClick={onCardClick} onDelete={onDelete} />
             </article>
           );
-        })}
+        }).reverse()}
       </section>
       {/*контейнер добавления карточек*/}
     </main>

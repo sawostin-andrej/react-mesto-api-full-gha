@@ -2,6 +2,7 @@ const { default: mongoose } = require('mongoose');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/user');
+
 const { SECRET_KEY = 'token' } = process.env;
 
 const { BadRequestError } = require('../utils/constants/badRequestError');
